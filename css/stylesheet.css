@@ -529,19 +529,22 @@ a.menu:hover{
 }
 .flag1{
     grid-area:flag1;
-    height: 100%;
+    height: 29px;
+    width: auto;
     margin: 0 41% 0 auto;
     opacity: 0;
 }
 .flag2{
     grid-area:flag2;
-    height: 100%;
+    height: 29px;
+    width: auto;
     margin: 0 41% 0 auto;
     opacity: 0;
 }
 .flag3{
     grid-area:flag3;
-    height: 100%;
+    height: 29px;
+    width: auto;
     margin: 0 41% 0 auto;
     opacity: 0;
 }
