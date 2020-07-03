@@ -290,7 +290,7 @@ a.menu:hover{
 .works-grid{
     display: grid;
     width: 750px;
-    height: 680px;
+    height: 690px;
     margin: auto;
     padding:15px 0;
     grid-template-rows: 1fr 1fr 1fr 1fr;
