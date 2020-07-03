@@ -290,15 +290,16 @@ a.menu:hover{
 .works-grid{
     display: grid;
     width: 750px;
-    height: 510px;
+    height: 680px;
     margin: auto;
     padding:15px 0;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
     grid-template-areas: 'work1 work2 work3'
                          'work4 work5 work6'
-                         '.     work7 .     ';
+                         'work7 work8 work9'
+                         'work10 work11 .';
 }
 
 .work{
@@ -327,6 +328,11 @@ a.menu:hover{
 .work5{grid-area:work5;}
 .work6{grid-area:work6;}
 .work7{grid-area:work7;}
+.work8{grid-area:work8;}
+.work9{grid-area:work9;}
+.work10{grid-area:work10;}
+.work11{grid-area:work11;}
+
 
 
 @media screen and (max-width:780px){
@@ -346,16 +352,18 @@ a.menu:hover{
     .works-grid{
         display: grid;
         width: 310px;
-        height: 430px;
+        height: 770px;
         margin: auto;
         padding:15px 0;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
         grid-template-areas: 'work1 work2'
                              'work3 work4'
                              'work5 work6'
-                             'work7 .';
+                             'work7 work8'
+                             'work9 work10'
+                             'work11 .';
     }
 }
 
