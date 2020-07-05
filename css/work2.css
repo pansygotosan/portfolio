@@ -1,0 +1,385 @@
+body{
+    background:#ffffff;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.menu{
+    font-family: adrianna, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    writing-mode:vertical-rl;
+    position: fixed;
+    right: 20px;
+    top: 40px;
+    z-index:9999; 
+}
+
+.menu ul{
+    list-style: none;
+    color: #333333;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+a{
+    text-decoration:none;
+    color: #333333;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.menu-now{
+    color: #5da797;
+}
+
+@media screen and (max-width:780px){
+    .menu{
+        right: 10px;
+        top: 20px;
+    }
+
+    .menu ul{
+        font-size: 24px;
+    }
+}
+
+.logo{
+    font-family: adrianna, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.logo a{
+    text-decoration:none;
+    color: #5da797;
+}
+
+.logo p{
+    margin: 0;
+}
+
+.logo1{
+    font-size: 20px;
+}
+
+.logo2{
+    font-size: 36px;
+}
+
+@media screen and (max-width:780px){
+    .logo{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .logo1{
+        font-size: 18px;
+    }
+    .logo2{
+        font-size: 24px;
+    }
+}
+
+
+.works{
+    width: 100vw;
+    color: #333333;
+    font-size: 14px;
+}
+
+.works-title{
+    position: relative; 
+    height: 120px;
+}
+
+.works-background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    width: 150px;
+    height: 65px;
+    background-color: #333333;
+}
+
+.works-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    font-family: adrianna, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+}
+
+
+.work-grid{
+    display: grid;
+    width: 770px;
+    height:1082px;
+    margin: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 4fr 6fr;
+    grid-template-columns: 3fr 2fr;
+    gap: 12px;
+    grid-template-areas:'work-images work-title'
+                        'work-images work-time'
+                        'work-images work-area'
+                        'work-images work-tool'
+                        'work-images url'
+                        'sentence sentence'
+                        'movie movie';
+}
+
+.work-grid p{
+    margin: 0;
+}
+
+.work-title{grid-area: work-title;}
+.work-time{grid-area: work-time;}
+.work-area{grid-area: work-area;}
+.work-tool{grid-area: work-tool;}
+.url{grid-area: url;}
+.sentence{grid-area: sentence;}
+.movie{grid-area: movie;}
+
+.each-title{
+    font-size: 16px;
+}
+.work-main-title{
+    font-size: 20px;
+}
+
+.work-images {
+    grid-area: work-images;
+    width:448px;
+}
+.work-images p {
+    margin: 0;
+    padding:0;
+}
+.work-images ul {
+    list-style: none;
+    display:block;
+    overflow:hidden;
+    margin: auto;
+    padding: 0;
+    clear:both;
+}
+.work-images li {
+    display:block;
+    float:left;
+    background:#fff;
+}
+.work-images li img {
+    cursor:pointer;
+}
+
+.photo-main img{
+    width: 448px;
+    height: auto;
+}
+
+.photo img{
+    width: 112px;
+    height: auto;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.photo:hover{
+    opacity: 0.5;
+}
+ 
+
+@media screen and (max-width:780px){
+    .works{
+        padding: 20px 0;
+    }
+    .works-title{
+        height: 100px;
+    }
+    .works-background{
+        width: 120px;
+        height: 50px;
+    }
+    .works-text{
+        font-size: 24px;
+    }
+    .work-grid{
+        width: 310px;
+        height:1490px;
+        grid-template-rows: 1fr 4.5fr 1fr 1fr 1fr 1fr 9fr 4fr;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        grid-template-areas:'work-title'
+                            'work-images'
+                            'work-time'
+                            'work-area'
+                            'work-tool'
+                            'url'
+                            'sentence'
+                            'movie';
+    }
+    .work-grid p{
+        margin: 0;
+    }
+    .each-title{
+        font-size: 16px;
+    }
+    .work-main-title{
+        font-size: 20px;
+    }
+    .work-images {
+        width:310px;
+    }
+    .photo-main img{
+        width: 310px;
+    }
+    .photo img{
+        width: 77px;
+    }
+}
+
+
+.btn{
+    width: 650px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow{
+    position: relative; 
+    height: 120px;  
+}
+
+.arrow-background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    width: 80px;
+    height: 40px;
+    background-color: #ffffff;
+    border: solid 2px #333333;
+    border-radius: 1px;
+}
+
+.arrow-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    font-family: adrianna, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #333333;
+    font-size: 24px;
+    margin: 0;
+}
+
+.none{
+   opacity: 0; 
+}
+
+@media screen and (max-width:780px){
+    .btn{
+        width: 250px;
+    }
+    
+    .arrow{
+        position: relative; 
+        height: 60px;  
+    }
+    
+    .arrow-background{
+        width: 60px;
+        height: 30px;
+        border-radius: 0.5px;
+    }
+    
+    .arrow-text{
+        font-size: 16px;
+    }
+}
+
+
+
+
+.bottom{
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+}
+.bottom-box{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color:#5da797 ;
+    width: 60vw;
+    height: 10vh;
+}
+
+.bottom-horizontally-line{
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    width: 60%;
+    height: 1.2vw;
+    background-color: #333333;
+    transform:skewY(-1deg);
+}
+
+.bottom-vertical-line{
+    position: absolute;
+    left: 42%;
+    width: 1vw;
+    height: 100%;
+    background-color: #333333;
+    transform:skewX(3deg);
+}
+
+@media screen and (max-width:780px){
+    .bottom{
+        height: 5vh;
+    }
+    .bottom-box{
+        width: 70vw;
+        height: 5vh;
+    }
+    
+    .bottom-horizontally-line{
+        bottom: 50%;
+        width: 70%;
+    }
+    
+    .bottom-vertical-line{
+        left: 32%;
+        width: 1vw;
+    }
+}
+
+.movie{
+    text-align: center;
+}
+.mov{
+    width: 90%;
+}
