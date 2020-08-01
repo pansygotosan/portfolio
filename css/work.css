@@ -128,21 +128,23 @@ a:hover{
     margin: 0;
 }
 
-
+.sentence{
+    margin: auto;
+    width: 770px;
+}
 .work-grid{
     display: grid;
     width: 770px;
-    height:770px;
+    height:430px;
     margin: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 4fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 3fr 2fr;
     gap: 12px;
     grid-template-areas:'work-images work-title'
                         'work-images work-time'
                         'work-images work-area'
                         'work-images work-tool'
-                        'work-images url'
-                        'sentence sentence';
+                        'work-images url';
 }
 
 .work-grid p{
@@ -203,7 +205,8 @@ a:hover{
 .photo:hover{
     opacity: 0.5;
 }
- 
+
+
 
 @media screen and (max-width:780px){
     .works{
@@ -219,10 +222,14 @@ a:hover{
     .works-text{
         font-size: 24px;
     }
+    .sentence{
+        margin: auto;
+        width: 310px;
+    }
     .work-grid{
         width: 310px;
-        height:1200px;
-        grid-template-rows: 1fr 4.5fr 1fr 1fr 1fr 1fr 9fr ;
+        height:650px;
+        grid-template-rows: 1fr 4.5fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         gap: 5px;
         grid-template-areas:'work-title'
@@ -230,8 +237,7 @@ a:hover{
                             'work-time'
                             'work-area'
                             'work-tool'
-                            'url'
-                            'sentence';
+                            'url';
     }
     .work-grid p{
         margin: 0;
@@ -372,4 +378,12 @@ a:hover{
         left: 32%;
         width: 1vw;
     }
+}
+
+
+.movie{
+    text-align: center;
+}
+.mov{
+    width: 90%;
 }
