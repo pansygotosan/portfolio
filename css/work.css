@@ -156,7 +156,6 @@ a:hover{
 .work-area{grid-area: work-area;}
 .work-tool{grid-area: work-tool;}
 .url{grid-area: url;}
-.sentence{grid-area: sentence;}
 
 .each-title{
     font-size: 16px;
